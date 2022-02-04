@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartViewController" customModule="AladinProject" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonCheckout" destination="u4r-rp-qUN" id="EH0-o0-W1H"/>
+                <outlet property="labelTotalPayment" destination="iiM-YE-kgl" id="7fS-nd-TqA"/>
+                <outlet property="tableViewCart" destination="e4e-0P-KIJ" id="zZL-zY-wqz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgA-oU-oo0">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pic-OR-un5">
+                            <rect key="frame" x="22" y="70" width="118" height="32.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4r-rp-qUN">
+                            <rect key="frame" x="22" y="804" width="370" height="50"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="0Y5-YD-XFa"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Checkout">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBoudns" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="e4e-0P-KIJ">
+                            <rect key="frame" x="0.0" y="112.5" width="414" height="646"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiM-YE-kgl">
+                            <rect key="frame" x="350.5" y="765.5" width="41.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="u4r-rp-qUN" secondAttribute="bottom" constant="42" id="65L-xz-3ix"/>
+                        <constraint firstAttribute="trailing" secondItem="u4r-rp-qUN" secondAttribute="trailing" constant="22" id="9MK-Oj-Nfa"/>
+                        <constraint firstItem="e4e-0P-KIJ" firstAttribute="top" secondItem="Pic-OR-un5" secondAttribute="bottom" constant="10" id="9Xa-bm-Jpp"/>
+                        <constraint firstItem="e4e-0P-KIJ" firstAttribute="leading" secondItem="IgA-oU-oo0" secondAttribute="leading" id="BqJ-Fh-DmV"/>
+                        <constraint firstItem="Pic-OR-un5" firstAttribute="top" secondItem="IgA-oU-oo0" secondAttribute="top" constant="70" id="Rc3-yX-TED"/>
+                        <constraint firstItem="u4r-rp-qUN" firstAttribute="leading" secondItem="IgA-oU-oo0" secondAttribute="leading" constant="22" id="S6n-eF-x66"/>
+                        <constraint firstAttribute="trailing" secondItem="iiM-YE-kgl" secondAttribute="trailing" constant="22" id="bil-mb-xiv"/>
+                        <constraint firstAttribute="trailing" secondItem="e4e-0P-KIJ" secondAttribute="trailing" id="chd-8I-Nar"/>
+                        <constraint firstItem="Pic-OR-un5" firstAttribute="leading" secondItem="IgA-oU-oo0" secondAttribute="leading" constant="22" id="cqd-8O-xUM"/>
+                        <constraint firstItem="u4r-rp-qUN" firstAttribute="top" secondItem="iiM-YE-kgl" secondAttribute="bottom" constant="18" id="hzt-sn-CGa"/>
+                        <constraint firstItem="iiM-YE-kgl" firstAttribute="top" secondItem="e4e-0P-KIJ" secondAttribute="bottom" constant="7" id="idM-Gy-zKi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IgA-oU-oo0" secondAttribute="bottom" id="6JI-PY-5xM"/>
+                <constraint firstItem="IgA-oU-oo0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AM2-qt-4QH"/>
+                <constraint firstItem="IgA-oU-oo0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="amq-1g-ESo"/>
+                <constraint firstItem="IgA-oU-oo0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jjx-8p-2Ss"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="57.589285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

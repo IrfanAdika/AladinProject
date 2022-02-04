@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		610160F073D72D688ABEF753 /* Pods_AladinProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FB9AF4D1EF979681D66DCC /* Pods_AladinProjectTests.framework */; };
+		640A129127ABC8C800E5A1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A129027ABC8C800E5A1E5 /* AppDelegate.swift */; };
+		640A129327ABC8C800E5A1E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A129227ABC8C800E5A1E5 /* SceneDelegate.swift */; };
+		640A129A27ABC8CC00E5A1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640A129927ABC8CC00E5A1E5 /* Assets.xcassets */; };
+		640A129D27ABC8CC00E5A1E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640A129B27ABC8CC00E5A1E5 /* LaunchScreen.storyboard */; };
+		640A12A827ABC8CC00E5A1E5 /* AladinProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12A727ABC8CC00E5A1E5 /* AladinProjectTests.swift */; };
+		640A12B227ABC8CC00E5A1E5 /* AladinProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12B127ABC8CC00E5A1E5 /* AladinProjectUITests.swift */; };
+		640A12B427ABC8CC00E5A1E5 /* AladinProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12B327ABC8CC00E5A1E5 /* AladinProjectUITestsLaunchTests.swift */; };
+		640A12C327ABD19700E5A1E5 /* CoreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12C227ABD19700E5A1E5 /* CoreApi.swift */; };
+		640A12C527ABD2F400E5A1E5 /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12C427ABD2F400E5A1E5 /* ServiceConfig.swift */; };
+		640A12CA27ABDA0500E5A1E5 /* ProductContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12C927ABDA0500E5A1E5 /* ProductContract.swift */; };
+		640A12CC27ABDA1700E5A1E5 /* ProductInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12CB27ABDA1700E5A1E5 /* ProductInteractor.swift */; };
+		640A12CE27ABDA2F00E5A1E5 /* ProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12CD27ABDA2F00E5A1E5 /* ProductPresenter.swift */; };
+		640A12D027ABDA3C00E5A1E5 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12CF27ABDA3C00E5A1E5 /* ProductViewController.swift */; };
+		640A12D227ABDA5300E5A1E5 /* ProductRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12D127ABDA5300E5A1E5 /* ProductRouter.swift */; };
+		640A12D427ABDAB800E5A1E5 /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12D327ABDAB800E5A1E5 /* ProductEntity.swift */; };
+		640A12D927ABE98D00E5A1E5 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A12D827ABE98D00E5A1E5 /* ModuleBuilder.swift */; };
+		640A12DB27ABEA1400E5A1E5 /* ProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 640A12DA27ABEA1400E5A1E5 /* ProductViewController.xib */; };
+		64461DD327AC0206004388CF /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DD127AC0206004388CF /* ProductViewCell.swift */; };
+		64461DD427AC0206004388CF /* ProductViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64461DD227AC0206004388CF /* ProductViewCell.xib */; };
+		64461DD627AC30F1004388CF /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DD527AC30F1004388CF /* BaseResponse.swift */; };
+		64461DD927ACE5B3004388CF /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DD727ACE5B3004388CF /* CartViewController.swift */; };
+		64461DDA27ACE5B3004388CF /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64461DD827ACE5B3004388CF /* CartViewController.xib */; };
+		64461DDE27ACE5E1004388CF /* CartViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DDC27ACE5E1004388CF /* CartViewCellTableViewCell.swift */; };
+		64461DDF27ACE5E1004388CF /* CartViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64461DDD27ACE5E1004388CF /* CartViewCellTableViewCell.xib */; };
+		64461DE127ACE5F9004388CF /* CartContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DE027ACE5F9004388CF /* CartContract.swift */; };
+		64461DE327ACE602004388CF /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DE227ACE602004388CF /* CartInteractor.swift */; };
+		64461DE527ACE60C004388CF /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DE427ACE60C004388CF /* CartPresenter.swift */; };
+		64461DE727ACE619004388CF /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DE627ACE619004388CF /* CartRouter.swift */; };
+		64461DE927ACE628004388CF /* CartEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DE827ACE628004388CF /* CartEntity.swift */; };
+		64461DEB27ACF934004388CF /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DEA27ACF934004388CF /* RealmManager.swift */; };
+		64461DED27AD0D53004388CF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DEC27AD0D53004388CF /* BaseViewController.swift */; };
+		64461DEF27ADDE6B004388CF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64461DEE27ADDE6A004388CF /* String.swift */; };
+		80775A6907199FBB3384A180 /* Pods_AladinProject_AladinProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE19388FBF225623B95F936E /* Pods_AladinProject_AladinProjectUITests.framework */; };
+		9B809C6310E47C4A9D2EFD16 /* Pods_AladinProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59941CC4C2D5EDC2DB7EBF48 /* Pods_AladinProject.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		640A12A427ABC8CC00E5A1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 640A128527ABC8C800E5A1E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 640A128C27ABC8C800E5A1E5;
+			remoteInfo = AladinProject;
+		};
+		640A12AE27ABC8CC00E5A1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 640A128527ABC8C800E5A1E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 640A128C27ABC8C800E5A1E5;
+			remoteInfo = AladinProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F8D8F2B49C7F75BA66C35C0 /* Pods-AladinProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AladinProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AladinProjectTests/Pods-AladinProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		336048195377372D66C6087E /* Pods-AladinProject-AladinProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AladinProject-AladinProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-AladinProject-AladinProjectUITests/Pods-AladinProject-AladinProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		446B5F2FABD6A9F184215A92 /* Pods-AladinProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AladinProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AladinProjectTests/Pods-AladinProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		58FB9AF4D1EF979681D66DCC /* Pods_AladinProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AladinProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59941CC4C2D5EDC2DB7EBF48 /* Pods_AladinProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AladinProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		640A128D27ABC8C800E5A1E5 /* AladinProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AladinProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		640A129027ABC8C800E5A1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		640A129227ABC8C800E5A1E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		640A129927ABC8CC00E5A1E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		640A129C27ABC8CC00E5A1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		640A129E27ABC8CC00E5A1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		640A12A327ABC8CC00E5A1E5 /* AladinProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AladinProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		640A12A727ABC8CC00E5A1E5 /* AladinProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AladinProjectTests.swift; sourceTree = "<group>"; };
+		640A12AD27ABC8CC00E5A1E5 /* AladinProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AladinProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		640A12B127ABC8CC00E5A1E5 /* AladinProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AladinProjectUITests.swift; sourceTree = "<group>"; };
+		640A12B327ABC8CC00E5A1E5 /* AladinProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AladinProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		640A12C227ABD19700E5A1E5 /* CoreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreApi.swift; sourceTree = "<group>"; };
+		640A12C427ABD2F400E5A1E5 /* ServiceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConfig.swift; sourceTree = "<group>"; };
+		640A12C927ABDA0500E5A1E5 /* ProductContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductContract.swift; sourceTree = "<group>"; };
+		640A12CB27ABDA1700E5A1E5 /* ProductInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInteractor.swift; sourceTree = "<group>"; };
+		640A12CD27ABDA2F00E5A1E5 /* ProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPresenter.swift; sourceTree = "<group>"; };
+		640A12CF27ABDA3C00E5A1E5 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		640A12D127ABDA5300E5A1E5 /* ProductRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRouter.swift; sourceTree = "<group>"; };
+		640A12D327ABDAB800E5A1E5 /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
+		640A12D827ABE98D00E5A1E5 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		640A12DA27ABEA1400E5A1E5 /* ProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductViewController.xib; sourceTree = "<group>"; };
+		64461DD127AC0206004388CF /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
+		64461DD227AC0206004388CF /* ProductViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductViewCell.xib; sourceTree = "<group>"; };
+		64461DD527AC30F1004388CF /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		64461DD727ACE5B3004388CF /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		64461DD827ACE5B3004388CF /* CartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
+		64461DDC27ACE5E1004388CF /* CartViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		64461DDD27ACE5E1004388CF /* CartViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewCellTableViewCell.xib; sourceTree = "<group>"; };
+		64461DE027ACE5F9004388CF /* CartContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartContract.swift; sourceTree = "<group>"; };
+		64461DE227ACE602004388CF /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
+		64461DE427ACE60C004388CF /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
+		64461DE627ACE619004388CF /* CartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRouter.swift; sourceTree = "<group>"; };
+		64461DE827ACE628004388CF /* CartEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartEntity.swift; sourceTree = "<group>"; };
+		64461DEA27ACF934004388CF /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		64461DEC27AD0D53004388CF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		64461DEE27ADDE6A004388CF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		9291749F819C895B4F470D62 /* Pods-AladinProject-AladinProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AladinProject-AladinProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-AladinProject-AladinProjectUITests/Pods-AladinProject-AladinProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE19388FBF225623B95F936E /* Pods_AladinProject_AladinProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AladinProject_AladinProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1850AA78F2D7618E9F5437 /* Pods-AladinProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AladinProject.release.xcconfig"; path = "Target Support Files/Pods-AladinProject/Pods-AladinProject.release.xcconfig"; sourceTree = "<group>"; };
+		C3129DDF63E98529E1F6A0AF /* Pods-AladinProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AladinProject.debug.xcconfig"; path = "Target Support Files/Pods-AladinProject/Pods-AladinProject.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		640A128A27ABC8C800E5A1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B809C6310E47C4A9D2EFD16 /* Pods_AladinProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		640A12A027ABC8CC00E5A1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610160F073D72D688ABEF753 /* Pods_AladinProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		640A12AA27ABC8CC00E5A1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80775A6907199FBB3384A180 /* Pods_AladinProject_AladinProjectUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38DFEAA6CEE1204DB49FAEFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3129DDF63E98529E1F6A0AF /* Pods-AladinProject.debug.xcconfig */,
+				BF1850AA78F2D7618E9F5437 /* Pods-AladinProject.release.xcconfig */,
+				336048195377372D66C6087E /* Pods-AladinProject-AladinProjectUITests.debug.xcconfig */,
+				9291749F819C895B4F470D62 /* Pods-AladinProject-AladinProjectUITests.release.xcconfig */,
+				1F8D8F2B49C7F75BA66C35C0 /* Pods-AladinProjectTests.debug.xcconfig */,
+				446B5F2FABD6A9F184215A92 /* Pods-AladinProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		640A128427ABC8C800E5A1E5 = {
+			isa = PBXGroup;
+			children = (
+				640A128F27ABC8C800E5A1E5 /* AladinProject */,
+				640A12A627ABC8CC00E5A1E5 /* AladinProjectTests */,
+				640A12B027ABC8CC00E5A1E5 /* AladinProjectUITests */,
+				640A128E27ABC8C800E5A1E5 /* Products */,
+				38DFEAA6CEE1204DB49FAEFE /* Pods */,
+				6C2F91E1D092EF2EA3BEC17E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		640A128E27ABC8C800E5A1E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				640A128D27ABC8C800E5A1E5 /* AladinProject.app */,
+				640A12A327ABC8CC00E5A1E5 /* AladinProjectTests.xctest */,
+				640A12AD27ABC8CC00E5A1E5 /* AladinProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		640A128F27ABC8C800E5A1E5 /* AladinProject */ = {
+			isa = PBXGroup;
+			children = (
+				640A12D727ABE95E00E5A1E5 /* Utility */,
+				640A12C627ABD43A00E5A1E5 /* Modules */,
+				640A12C127ABD16000E5A1E5 /* Data */,
+				640A12C027ABD14B00E5A1E5 /* Network */,
+				640A129027ABC8C800E5A1E5 /* AppDelegate.swift */,
+				640A129227ABC8C800E5A1E5 /* SceneDelegate.swift */,
+				640A129927ABC8CC00E5A1E5 /* Assets.xcassets */,
+				640A129B27ABC8CC00E5A1E5 /* LaunchScreen.storyboard */,
+				640A129E27ABC8CC00E5A1E5 /* Info.plist */,
+			);
+			path = AladinProject;
+			sourceTree = "<group>";
+		};
+		640A12A627ABC8CC00E5A1E5 /* AladinProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				640A12A727ABC8CC00E5A1E5 /* AladinProjectTests.swift */,
+			);
+			path = AladinProjectTests;
+			sourceTree = "<group>";
+		};
+		640A12B027ABC8CC00E5A1E5 /* AladinProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				640A12B127ABC8CC00E5A1E5 /* AladinProjectUITests.swift */,
+				640A12B327ABC8CC00E5A1E5 /* AladinProjectUITestsLaunchTests.swift */,
+			);
+			path = AladinProjectUITests;
+			sourceTree = "<group>";
+		};
+		640A12C027ABD14B00E5A1E5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				640A12C227ABD19700E5A1E5 /* CoreApi.swift */,
+				640A12C427ABD2F400E5A1E5 /* ServiceConfig.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		640A12C127ABD16000E5A1E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				64461DD527AC30F1004388CF /* BaseResponse.swift */,
+				64461DEA27ACF934004388CF /* RealmManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		640A12C627ABD43A00E5A1E5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				640A12C827ABD46900E5A1E5 /* Cart */,
+				640A12C727ABD44E00E5A1E5 /* Product */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		640A12C727ABD44E00E5A1E5 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				640A12DC27AC010B00E5A1E5 /* cell */,
+				640A12C927ABDA0500E5A1E5 /* ProductContract.swift */,
+				640A12CB27ABDA1700E5A1E5 /* ProductInteractor.swift */,
+				640A12CD27ABDA2F00E5A1E5 /* ProductPresenter.swift */,
+				640A12CF27ABDA3C00E5A1E5 /* ProductViewController.swift */,
+				640A12D127ABDA5300E5A1E5 /* ProductRouter.swift */,
+				640A12D327ABDAB800E5A1E5 /* ProductEntity.swift */,
+				640A12DA27ABEA1400E5A1E5 /* ProductViewController.xib */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		640A12C827ABD46900E5A1E5 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				64461DDB27ACE5C0004388CF /* cell */,
+				64461DD727ACE5B3004388CF /* CartViewController.swift */,
+				64461DD827ACE5B3004388CF /* CartViewController.xib */,
+				64461DE027ACE5F9004388CF /* CartContract.swift */,
+				64461DE227ACE602004388CF /* CartInteractor.swift */,
+				64461DE427ACE60C004388CF /* CartPresenter.swift */,
+				64461DE627ACE619004388CF /* CartRouter.swift */,
+				64461DE827ACE628004388CF /* CartEntity.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		640A12D727ABE95E00E5A1E5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				640A12D827ABE98D00E5A1E5 /* ModuleBuilder.swift */,
+				64461DEC27AD0D53004388CF /* BaseViewController.swift */,
+				64461DEE27ADDE6A004388CF /* String.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		640A12DC27AC010B00E5A1E5 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				64461DD127AC0206004388CF /* ProductViewCell.swift */,
+				64461DD227AC0206004388CF /* ProductViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		64461DDB27ACE5C0004388CF /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				64461DDC27ACE5E1004388CF /* CartViewCellTableViewCell.swift */,
+				64461DDD27ACE5E1004388CF /* CartViewCellTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		6C2F91E1D092EF2EA3BEC17E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59941CC4C2D5EDC2DB7EBF48 /* Pods_AladinProject.framework */,
+				BE19388FBF225623B95F936E /* Pods_AladinProject_AladinProjectUITests.framework */,
+				58FB9AF4D1EF979681D66DCC /* Pods_AladinProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		640A128C27ABC8C800E5A1E5 /* AladinProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 640A12B727ABC8CC00E5A1E5 /* Build configuration list for PBXNativeTarget "AladinProject" */;
+			buildPhases = (
+				FB04A2DE8C740999EE0BD666 /* [CP] Check Pods Manifest.lock */,
+				640A128927ABC8C800E5A1E5 /* Sources */,
+				640A128A27ABC8C800E5A1E5 /* Frameworks */,
+				640A128B27ABC8C800E5A1E5 /* Resources */,
+				7304E0DF3FDD0600EFD25DB2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AladinProject;
+			productName = AladinProject;
+			productReference = 640A128D27ABC8C800E5A1E5 /* AladinProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		640A12A227ABC8CC00E5A1E5 /* AladinProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 640A12BA27ABC8CC00E5A1E5 /* Build configuration list for PBXNativeTarget "AladinProjectTests" */;
+			buildPhases = (
+				1ACC3A63AFB299924B8045B6 /* [CP] Check Pods Manifest.lock */,
+				640A129F27ABC8CC00E5A1E5 /* Sources */,
+				640A12A027ABC8CC00E5A1E5 /* Frameworks */,
+				640A12A127ABC8CC00E5A1E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				640A12A527ABC8CC00E5A1E5 /* PBXTargetDependency */,
+			);
+			name = AladinProjectTests;
+			productName = AladinProjectTests;
+			productReference = 640A12A327ABC8CC00E5A1E5 /* AladinProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		640A12AC27ABC8CC00E5A1E5 /* AladinProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 640A12BD27ABC8CC00E5A1E5 /* Build configuration list for PBXNativeTarget "AladinProjectUITests" */;
+			buildPhases = (
+				18E9D15618F73FE2EE10BF32 /* [CP] Check Pods Manifest.lock */,
+				640A12A927ABC8CC00E5A1E5 /* Sources */,
+				640A12AA27ABC8CC00E5A1E5 /* Frameworks */,
+				640A12AB27ABC8CC00E5A1E5 /* Resources */,
+				15CDFF74F75C3CCDA18BCC4F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				640A12AF27ABC8CC00E5A1E5 /* PBXTargetDependency */,
+			);
+			name = AladinProjectUITests;
+			productName = AladinProjectUITests;
+			productReference = 640A12AD27ABC8CC00E5A1E5 /* AladinProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		640A128527ABC8C800E5A1E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					640A128C27ABC8C800E5A1E5 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					640A12A227ABC8CC00E5A1E5 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 640A128C27ABC8C800E5A1E5;
+					};
+					640A12AC27ABC8CC00E5A1E5 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 640A128C27ABC8C800E5A1E5;
+					};
+				};
+			};
+			buildConfigurationList = 640A128827ABC8C800E5A1E5 /* Build configuration list for PBXProject "AladinProject" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 640A128427ABC8C800E5A1E5;
+			productRefGroup = 640A128E27ABC8C800E5A1E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				640A128C27ABC8C800E5A1E5 /* AladinProject */,
+				640A12A227ABC8CC00E5A1E5 /* AladinProjectTests */,
+				640A12AC27ABC8CC00E5A1E5 /* AladinProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		640A128B27ABC8C800E5A1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64461DD427AC0206004388CF /* ProductViewCell.xib in Resources */,
+				640A129D27ABC8CC00E5A1E5 /* LaunchScreen.storyboard in Resources */,
+				64461DDF27ACE5E1004388CF /* CartViewCellTableViewCell.xib in Resources */,
+				640A12DB27ABEA1400E5A1E5 /* ProductViewController.xib in Resources */,
+				64461DDA27ACE5B3004388CF /* CartViewController.xib in Resources */,
+				640A129A27ABC8CC00E5A1E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		640A12A127ABC8CC00E5A1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		640A12AB27ABC8CC00E5A1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15CDFF74F75C3CCDA18BCC4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AladinProject-AladinProjectUITests/Pods-AladinProject-AladinProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AladinProject-AladinProjectUITests/Pods-AladinProject-AladinProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AladinProject-AladinProjectUITests/Pods-AladinProject-AladinProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18E9D15618F73FE2EE10BF32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AladinProject-AladinProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1ACC3A63AFB299924B8045B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AladinProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7304E0DF3FDD0600EFD25DB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AladinProject/Pods-AladinProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AladinProject/Pods-AladinProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AladinProject/Pods-AladinProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB04A2DE8C740999EE0BD666 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AladinProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		640A128927ABC8C800E5A1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640A12C527ABD2F400E5A1E5 /* ServiceConfig.swift in Sources */,
+				64461DDE27ACE5E1004388CF /* CartViewCellTableViewCell.swift in Sources */,
+				64461DEF27ADDE6B004388CF /* String.swift in Sources */,
+				64461DE527ACE60C004388CF /* CartPresenter.swift in Sources */,
+				640A12CA27ABDA0500E5A1E5 /* ProductContract.swift in Sources */,
+				64461DD927ACE5B3004388CF /* CartViewController.swift in Sources */,
+				64461DEB27ACF934004388CF /* RealmManager.swift in Sources */,
+				640A12CE27ABDA2F00E5A1E5 /* ProductPresenter.swift in Sources */,
+				64461DE327ACE602004388CF /* CartInteractor.swift in Sources */,
+				64461DE127ACE5F9004388CF /* CartContract.swift in Sources */,
+				640A12CC27ABDA1700E5A1E5 /* ProductInteractor.swift in Sources */,
+				640A12D927ABE98D00E5A1E5 /* ModuleBuilder.swift in Sources */,
+				640A129127ABC8C800E5A1E5 /* AppDelegate.swift in Sources */,
+				64461DED27AD0D53004388CF /* BaseViewController.swift in Sources */,
+				640A12D427ABDAB800E5A1E5 /* ProductEntity.swift in Sources */,
+				640A12D227ABDA5300E5A1E5 /* ProductRouter.swift in Sources */,
+				64461DD327AC0206004388CF /* ProductViewCell.swift in Sources */,
+				64461DE927ACE628004388CF /* CartEntity.swift in Sources */,
+				64461DE727ACE619004388CF /* CartRouter.swift in Sources */,
+				640A12D027ABDA3C00E5A1E5 /* ProductViewController.swift in Sources */,
+				640A129327ABC8C800E5A1E5 /* SceneDelegate.swift in Sources */,
+				640A12C327ABD19700E5A1E5 /* CoreApi.swift in Sources */,
+				64461DD627AC30F1004388CF /* BaseResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		640A129F27ABC8CC00E5A1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640A12A827ABC8CC00E5A1E5 /* AladinProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		640A12A927ABC8CC00E5A1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640A12B227ABC8CC00E5A1E5 /* AladinProjectUITests.swift in Sources */,
+				640A12B427ABC8CC00E5A1E5 /* AladinProjectUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		640A12A527ABC8CC00E5A1E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 640A128C27ABC8C800E5A1E5 /* AladinProject */;
+			targetProxy = 640A12A427ABC8CC00E5A1E5 /* PBXContainerItemProxy */;
+		};
+		640A12AF27ABC8CC00E5A1E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 640A128C27ABC8C800E5A1E5 /* AladinProject */;
+			targetProxy = 640A12AE27ABC8CC00E5A1E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		640A129B27ABC8CC00E5A1E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				640A129C27ABC8CC00E5A1E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		640A12B527ABC8CC00E5A1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		640A12B627ABC8CC00E5A1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		640A12B827ABC8CC00E5A1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3129DDF63E98529E1F6A0AF /* Pods-AladinProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMGN4CL226;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AladinProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irfan.AladinProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		640A12B927ABC8CC00E5A1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1850AA78F2D7618E9F5437 /* Pods-AladinProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMGN4CL226;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AladinProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irfan.AladinProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		640A12BB27ABC8CC00E5A1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F8D8F2B49C7F75BA66C35C0 /* Pods-AladinProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMGN4CL226;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irfan.AladinProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AladinProject.app/AladinProject";
+			};
+			name = Debug;
+		};
+		640A12BC27ABC8CC00E5A1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 446B5F2FABD6A9F184215A92 /* Pods-AladinProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMGN4CL226;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irfan.AladinProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AladinProject.app/AladinProject";
+			};
+			name = Release;
+		};
+		640A12BE27ABC8CC00E5A1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336048195377372D66C6087E /* Pods-AladinProject-AladinProjectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMGN4CL226;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irfan.AladinProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AladinProject;
+			};
+			name = Debug;
+		};
+		640A12BF27ABC8CC00E5A1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9291749F819C895B4F470D62 /* Pods-AladinProject-AladinProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMGN4CL226;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irfan.AladinProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AladinProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		640A128827ABC8C800E5A1E5 /* Build configuration list for PBXProject "AladinProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640A12B527ABC8CC00E5A1E5 /* Debug */,
+				640A12B627ABC8CC00E5A1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		640A12B727ABC8CC00E5A1E5 /* Build configuration list for PBXNativeTarget "AladinProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640A12B827ABC8CC00E5A1E5 /* Debug */,
+				640A12B927ABC8CC00E5A1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		640A12BA27ABC8CC00E5A1E5 /* Build configuration list for PBXNativeTarget "AladinProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640A12BB27ABC8CC00E5A1E5 /* Debug */,
+				640A12BC27ABC8CC00E5A1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		640A12BD27ABC8CC00E5A1E5 /* Build configuration list for PBXNativeTarget "AladinProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640A12BE27ABC8CC00E5A1E5 /* Debug */,
+				640A12BF27ABC8CC00E5A1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 640A128527ABC8C800E5A1E5 /* Project object */;
+}
