@@ -58,11 +58,11 @@ class CartPresenter: CartPresenterProtocol {
 
 extension CartPresenter: CartInteractorOutputProtocol {
     func didSuccessCheckout() {
-        
+        //Not implemented with api
     }
     
     func requestDidFailed(message: String) {
-        
+        view?.showAlertMessage(isSuccess: false, message: message)
     }
     
     

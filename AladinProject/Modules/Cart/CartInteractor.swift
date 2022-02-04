@@ -18,17 +18,17 @@ class CartInteractor:
     }
     
     func reqCheckout() {
-        
+        //Not implemented with api
     }
 }
 
 extension CartInteractor: CoreApiDelegate {
     func finish(interFace: CoreApi, responseHeaders: HTTPURLResponse, data: Data) {
-        
+        //Not implemented with api
     }
     
     func failed(interFace: CoreApi, result: AnyObject) {
-        
+        //Not implemented with api
     }
     
     

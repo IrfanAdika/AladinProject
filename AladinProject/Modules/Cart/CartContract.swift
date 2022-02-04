@@ -33,8 +33,7 @@ protocol CartInteractorInputProtocol: class {
 protocol CartViewProtocol: class {
     var presenter: CartPresenterProtocol? { get set }
     
-    func didSuccessGetProducts()
     func didSuccessCalcuteProduct()
     func showProgressDialog(isShow: Bool)
-    func showAlertMessage(title: String, message: String)
+    func showAlertMessage(isSuccess: Bool, message: String)
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CartViewController: UIViewController {
+class CartViewController: BaseViewController {
     
     @IBOutlet weak var tableViewCart: UITableView!
     @IBOutlet weak var buttonCheckout: UIButton!
@@ -102,10 +102,6 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension CartViewController: CartViewProtocol {
-    func didSuccessGetProducts() {
-        
-    }
-    
     func didSuccessCalcuteProduct() {
         if let cart = RealmManager.shared.cart, cart.isEmpty {
             self.dismiss(animated: true, completion: nil)
@@ -118,8 +114,8 @@ extension CartViewController: CartViewProtocol {
         
     }
     
-    func showAlertMessage(title: String, message: String) {
-        
+    func showAlertMessage(isSuccess: Bool, message: String) {
+        self.showAlertFromTop(message: message, isSuccess: isSuccess)
     }
     
     
